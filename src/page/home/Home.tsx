@@ -1,16 +1,22 @@
-import React from 'react'
-import './Home.css'
-import homeLogo from '../../assets/homeLogo.jpg'
+import React, { useState } from 'react';
+import './Home.css';
+import homeLogo from '../../assets/home.jpg'
 
-const Home = () => {
-  return (
-    <>
-        <h1 className='titulo'>Home</h1> 
+function Home(){
+    const [loggedIn, setLoggedIn] = useState(false);
 
-        <img src={homeLogo} className='img'  alt="Imagem Tela Inicial" />
-    </>
-
-  )
+    return (
+        
+      <div>
+        {loggedIn ? (
+          <h1>Bem-vindo de volta!</h1>
+          
+          ) : (
+          <button onClick={() => setLoggedIn(true)}>Entrar</button>
+          
+        )}
+      </div>
+    );
 }
 
-export default Home
+export default Home;
