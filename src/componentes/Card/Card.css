@@ -1,2 +1,5 @@
-.card {
-    color: #ef6868;}
+.card{
+    width: 500px;
+    border: 2px solid #dc143c;
+    margin: 0 0 1rem 0;
+}
