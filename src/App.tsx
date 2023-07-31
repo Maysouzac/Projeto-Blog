@@ -8,6 +8,10 @@ import Login from './page/Login/Login';
 import Cadastro from './page/Cadastro/Cadastro';
 import Home from './page/Home/Home';
 import { AuthProvider } from './Contexts/AuthContexts';
+import ListaTemas from './componentes/Temas/ListaTemas.tsx/ListaTemas';
+import FormularioTema from './componentes/Temas/FormularioTema/FormularioTema';
+import DeletarTema from './componentes/Temas/DeletarTema/DeletarTema';
+
 
 
 function App() {
@@ -22,6 +26,10 @@ function App() {
               <Route path="/login" element={<Login />} />
               <Route path="/cadastro" element={<Cadastro />} />
               <Route path="/home" element={<Home />} />
+              <Route path="/temas" element={<ListaTemas />} />
+              <Route path="/cadastroTema" element={<FormularioTema />} />
+              <Route path="/editarTema/:id" element={<FormularioTema />} />
+
             </Routes>
           </div>
           <Footer />
