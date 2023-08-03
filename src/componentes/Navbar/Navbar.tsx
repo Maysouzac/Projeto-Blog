@@ -3,7 +3,6 @@ import { Link, useNavigate } from 'react-router-dom'
 import { AuthContext } from '../../Contexts/AuthContexts'
 
 
-
 function Navbar() {
   let navigate = useNavigate()
 
