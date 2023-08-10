@@ -1,6 +1,3 @@
-import { useState } from 'react';
-import reactLogo from './assets/react.svg';
-import viteLogo from '/vite.svg';
 import './App.css';
 import 'react-toastify/dist/ReactToastify.css';
 import Login from './page/Login/Login';
@@ -9,7 +6,7 @@ import { AuthProvider } from './Contexts/AuthContexts';
 import { ToastContainer } from 'react-toastify';
 import Cadastro from './page/Cadastro/Cadastro';
 import Navbar from './componentes/Navbar/Navbar';
-import Home from './page/Home/Home';
+import Home from './page/home/Home';
 import Footer from './componentes/Footer/Footer';
 import ListaTemas from './componentes/Temas/ListaTemas/ListaTemas';
 import FormularioTema from './componentes/Temas/FormularioTema/FormularioTema';

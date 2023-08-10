@@ -1,4 +1,4 @@
-import React, { useContext, useEffect, useState } from 'react'
+import { useContext, useEffect, useState } from 'react'
 import { useNavigate, useParams } from 'react-router-dom'
 import { AuthContext } from '../../../Contexts/AuthContexts'
 import Postagem from '../../../Models/Postagem'
@@ -17,7 +17,7 @@ function DeletarPostagem() {
 
   async function buscarPorId(id: string) {
     try {
-      await buscar(`/postagens/${id}`, setPostagem, {
+      await buscar(`/postagem/${id}`, setPostagem, {
         headers: {
           'Authorization': token
         }
@@ -49,7 +49,7 @@ function DeletarPostagem() {
 
   async function deletarPostagem() {
     try {
-      await deletar(`/postagens/${id}`, {
+      await deletar(`/postagem/${id}`, {
         headers: {
           'Authorization': token
         }

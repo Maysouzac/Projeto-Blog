@@ -1,4 +1,4 @@
-import React, { ChangeEvent, useContext, useEffect, useState } from 'react';
+import { ChangeEvent, useContext, useEffect, useState } from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
 import { AuthContext } from '../../../Contexts/AuthContexts';
 import Postagem from '../../../Models/Postagem';
@@ -33,7 +33,7 @@ function FormularioPostagem() {
   });
 
   async function buscarPostagemPorId(id: string) {
-    await buscar(`/postagens/${id}`, setPostagem, {
+    await buscar(`/postagem/${id}`, setPostagem, {
       headers: {
         Authorization: token,
       },
@@ -99,7 +99,7 @@ function FormularioPostagem() {
 
     if (id != undefined) {
       try {
-        await atualizar(`/postagens`, postagem, setPostagem, {
+        await atualizar(`/postagem`, postagem, setPostagem, {
           headers: {
             Authorization: token,
           },
@@ -116,7 +116,7 @@ function FormularioPostagem() {
       }
     } else {
       try {
-        await cadastrar(`/postagens`, postagem, setPostagem, {
+        await cadastrar(`/postagem`, postagem, setPostagem, {
           headers: {
             Authorization: token,
           },
