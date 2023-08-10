@@ -6,7 +6,6 @@ import { AuthProvider } from './Contexts/AuthContexts';
 import { ToastContainer } from 'react-toastify';
 import Cadastro from './page/Cadastro/Cadastro';
 import Navbar from './componentes/Navbar/Navbar';
-import Home from './page/home/Home';
 import Footer from './componentes/Footer/Footer';
 import ListaTemas from './componentes/Temas/ListaTemas/ListaTemas';
 import FormularioTema from './componentes/Temas/FormularioTema/FormularioTema';
@@ -16,6 +15,7 @@ import FormularioPostagem from './componentes/Postagens/FormularioPostagem/Formu
 
 import Perfil from './page/Perfil/Perfil';
 import DeletarPostagem from './componentes/Postagens/DeletarPostagem/DeletarPostagem';
+import Home from './page/Home/Home';
 
 function App() {
   
