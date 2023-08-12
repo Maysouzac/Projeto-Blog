@@ -15,7 +15,6 @@ function Login() {
   );
 
   const { usuario, handleLogin } = useContext(AuthContext);
-
   const {isLoading} = useContext(AuthContext) 
 
   useEffect(() => {
@@ -40,7 +39,7 @@ function login(e: ChangeEvent<HTMLFormElement>) {
     <>
       <div className="grid grid-cols-1 lg:grid-cols-2 h-screen place-items-center font-bold ">
         <form className="flex justify-center items-center flex-col w-1/2 gap-4" onSubmit={login}>
-          <h2 className="text-slate-900 text-5xl ">Entrar</h2>
+          <h2 className="bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-violet-500 text-5xl ">Entrar</h2>
           <div className="flex flex-col w-full">
             <label htmlFor="usuario">Usuário</label>
             <input
